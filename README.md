@@ -19,6 +19,8 @@ Mini radar mapping system using an ultrasonic sensor for a hackathon.
 - Buzzer (x1)
 - Joystick Module (x1)
 
+Pin numbers are marked at the top of RadarMapper.ino, change as you see fit
+
 # Software List:
 - Arduino IDE
 - Processing
