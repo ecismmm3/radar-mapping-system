@@ -6,22 +6,28 @@ Servo servo;
 const int rs = 32, en = 34, d4 = 44, d5 = 46, d6 = 48, d7 = 50;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
-int button = 49;
+int button = 49; // button pin
 int count = 0;
+double pos = 0;
+
+// Joystick
 int SW_pin = 52;
 int X_pin = A0;
 int Y_pin = A1;
-double pos = 0;
-int servoPin = 2;
-int turretLED = 39;
-int firstLED = 42;
-int buzzer = 28;
+
+int servoPin = 2; // Servo pin
+int turretLED = 39; // Joystick Mode LED
+int firstLED = 42; // Panning Mode LED
+int buzzer = 28; // Buzzer Pin
 int turret = false;
 
+// Ultrasonic Sensor
 int triggerPin = 26;
 int echoPin = 24;
+
 float speedOfSound = 339.2;
 float conversionFactor = 0.0001;
+
 unsigned int pingTime = 0;
 unsigned int pingTimeAvg = 0;
 
